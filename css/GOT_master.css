@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* ----- custom font ----- */
 
 @font-face {
     font-family: 'GOT_font';
@@ -25,10 +24,7 @@
 }
 
 
-/* ----- end custom font ----- */
 
-
-/* ----- default styles ----- */
 
 body {
     background-image: url(../images/grungeBG.jpg);
@@ -62,8 +58,7 @@ main {
 
 #houseImages {
     position: relative;
-    width: 4000px;
-    /*this might need to be bigger*/
+    width: 6000px;
     transition: all .5s;
 }
 
@@ -83,10 +78,6 @@ main {
 }
 
 
-/* ----- end default styles ----- */
-
-
-/* ----- image sprite ----- */
 
 .sigilContainer {
     width: 51px;
@@ -95,9 +86,9 @@ main {
     overflow: hidden;
     background-image: url(../images/GOT_sprites.png);
     background-repeat: no-repeat;
-    transition: transform .3s;
-    -webkit-transition: -webkit-transform .3s;
-    -moz-transition: -moz-transform .3s;
+    transition: transform .4s;
+    -webkit-transition: -webkit-transform .4s;
+    -moz-transition: -moz-transform .4s;
 }
 
 .stark {
@@ -147,27 +138,31 @@ main {
 .arryn:hover {
     background-position: -253px 0px;
 }
-
-
-/* ----- end image sprite ----- */
-
-
-/* ----- classes for transitions ----- */
-
-.scaleUp {
-    -moz-transform: scale(1.7, 1.7);
-    -webkit-transform: scale(1.7, 1.7);
-    transform: scale(1.7, 1.7);
+.targaryen {
+    background-position: -304px -54px;
 }
 
-.scaleHalfUp {
-    -moz-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
+.targaryen:hover {
+    background-position: -305px 0px;
+}
+
+.tyrell {
+    background-position: -355px -54px;
+}
+
+.tyrell:hover {
+    background-position: -355px 0px;
+}
+
+.frey {
+    background-position: -407px -54px;
+}
+
+.frey:hover {
+    background-position: -407px 0px;
 }
 
 
-/* add styles here for lightbox and video */
 
 .lightbox {
     position: absolute;
@@ -200,4 +195,21 @@ video {
 
 .show-lightbox {
     display: block;
+}
+.controls {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 20px;
+
+}
+
+.fas:hover {
+    color: red;
 }
